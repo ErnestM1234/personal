@@ -24,7 +24,7 @@ def create_app():
 
     # scheduler
     scheduler = BackgroundScheduler()
-    scheduler.add_job(getAndSendFoodInfo, trigger='cron', second='*/6')
+    scheduler.add_job(getAndSendFoodInfo, trigger='cron', day='*')
     scheduler.start()
 
 
