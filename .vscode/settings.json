@@ -1,0 +1,6 @@
+{
+    "python.linting.pylintEnabled": false,
+    "python.pythonPath": "/Users/ernie/.local/share/virtualenvs/personal-DcyNlp4J/bin/python",
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+  }
