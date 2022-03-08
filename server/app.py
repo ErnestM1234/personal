@@ -4,7 +4,6 @@ from flask import Flask
 from apscheduler.schedulers.background import BackgroundScheduler
 
 
-
 def create_app():
     # app
     app = Flask(__name__)
