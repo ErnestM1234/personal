@@ -1,7 +1,7 @@
 from decimal import ROUND_DOWN
 from server.services.generateServices import CustomService
 from flask import Flask
-from apscheduler.schedulers.background import BackgroundScheduler
+from APScheduler.schedulers.background import BackgroundScheduler
 
 
 def create_app():
@@ -23,11 +23,12 @@ def create_app():
                 service.discord_service.display_message('<@' + row[2] + '>\n' + message)
     
 
-    # scheduler
-    scheduler = BackgroundScheduler()
-    # breakfast
-    scheduler.add_job(getAndSendFoodInfo, trigger='cron', second='*/3')
-    scheduler.start()
+    # # scheduler
+    # scheduler = BackgroundScheduler()
+    # # breakfast
+    # scheduler.add_job(getAndSendFoodInfo, trigger='cron', second='*/3')
+    # scheduler.start()
+    getAndSendFoodInfo()
 
 
     @app.route('/')
