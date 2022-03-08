@@ -1,7 +1,8 @@
 from decimal import ROUND_DOWN
+from sqlite3 import Row
 from server.services.generateServices import CustomService
 from flask import Flask
-from APScheduler.schedulers.background import BackgroundScheduler
+#from APScheduler.schedulers.background import BackgroundScheduler
 
 
 def create_app():
